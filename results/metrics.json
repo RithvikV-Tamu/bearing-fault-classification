@@ -1,0 +1,510 @@
+{
+  "Leave-one-load-out": {
+    "Logistic regression, 4 hand-made features": {
+      "pooled_accuracy": 0.7245315528752961,
+      "pooled_macro_f1": 0.7665837732733554,
+      "mean_fold_accuracy": 0.7231897451310002,
+      "min_fold_accuracy": 0.6173835125448028,
+      "mean_fold_macro_f1": 0.7646918100097739,
+      "min_fold_macro_f1": 0.6840836704638196,
+      "folds": [
+        {
+          "fold": "test on 0 HP",
+          "test_windows": 1116,
+          "accuracy": 0.6173835125448028,
+          "macro_f1": 0.6840836704638196
+        },
+        {
+          "fold": "test on 1 HP",
+          "test_windows": 1175,
+          "accuracy": 0.8127659574468085,
+          "macro_f1": 0.8429853091336197
+        },
+        {
+          "fold": "test on 2 HP",
+          "test_windows": 1174,
+          "accuracy": 0.7385008517887564,
+          "macro_f1": 0.7788124330871047
+        },
+        {
+          "fold": "test on 3 HP",
+          "test_windows": 1178,
+          "accuracy": 0.7241086587436333,
+          "macro_f1": 0.7528858273545522
+        }
+      ],
+      "confusion_matrix": [
+        [
+          401,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          851,
+          411,
+          148
+        ],
+        [
+          0,
+          105,
+          896,
+          412
+        ],
+        [
+          11,
+          122,
+          62,
+          1216
+        ]
+      ]
+    },
+    "Logistic regression, FFT spectrum": {
+      "pooled_accuracy": 0.985354296790868,
+      "pooled_macro_f1": 0.9872481829658872,
+      "mean_fold_accuracy": 0.9849731057837826,
+      "min_fold_accuracy": 0.9551971326164874,
+      "mean_fold_macro_f1": 0.9873644218172501,
+      "min_fold_macro_f1": 0.964308077800741,
+      "folds": [
+        {
+          "fold": "test on 0 HP",
+          "test_windows": 1116,
+          "accuracy": 0.9551971326164874,
+          "macro_f1": 0.964308077800741
+        },
+        {
+          "fold": "test on 1 HP",
+          "test_windows": 1175,
+          "accuracy": 0.9948936170212765,
+          "macro_f1": 0.9957501625291951
+        },
+        {
+          "fold": "test on 2 HP",
+          "test_windows": 1174,
+          "accuracy": 0.9965928449744463,
+          "macro_f1": 0.9971589991928975
+        },
+        {
+          "fold": "test on 3 HP",
+          "test_windows": 1178,
+          "accuracy": 0.9932088285229203,
+          "macro_f1": 0.9922404477461669
+        }
+      ],
+      "confusion_matrix": [
+        [
+          409,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1345,
+          16,
+          49
+        ],
+        [
+          3,
+          0,
+          1410,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1411
+        ]
+      ]
+    },
+    "Neural network (PyTorch MLP), FFT spectrum": {
+      "pooled_accuracy": 0.985354296790868,
+      "pooled_macro_f1": 0.9878790898654621,
+      "mean_fold_accuracy": 0.985069638406926,
+      "min_fold_accuracy": 0.9632616487455197,
+      "mean_fold_macro_f1": 0.987884450762197,
+      "min_fold_macro_f1": 0.9706819901931193,
+      "folds": [
+        {
+          "fold": "test on 0 HP",
+          "test_windows": 1116,
+          "accuracy": 0.9632616487455197,
+          "macro_f1": 0.9706819901931193
+        },
+        {
+          "fold": "test on 1 HP",
+          "test_windows": 1175,
+          "accuracy": 0.9923404255319149,
+          "macro_f1": 0.9936327426911302
+        },
+        {
+          "fold": "test on 2 HP",
+          "test_windows": 1174,
+          "accuracy": 0.9872231686541738,
+          "macro_f1": 0.9893417522724474
+        },
+        {
+          "fold": "test on 3 HP",
+          "test_windows": 1178,
+          "accuracy": 0.9974533106960951,
+          "macro_f1": 0.9978813178920909
+        }
+      ],
+      "confusion_matrix": [
+        [
+          409,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1343,
+          30,
+          37
+        ],
+        [
+          0,
+          0,
+          1413,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1410
+        ]
+      ]
+    }
+  },
+  "Leave-one-fault-size-and-load-out (stricter)": {
+    "Logistic regression, 4 hand-made features": {
+      "pooled_accuracy": 0.5182201062076542,
+      "pooled_macro_f1": 0.5084779427203787,
+      "mean_fold_accuracy": 0.5170289213699825,
+      "min_fold_accuracy": 0.16560509554140126,
+      "mean_fold_macro_f1": 0.4836825007456622,
+      "min_fold_macro_f1": 0.12771680532068233,
+      "folds": [
+        {
+          "fold": "test on 0.007 in at 0 HP",
+          "test_windows": 411,
+          "accuracy": 0.6447688564476886,
+          "macro_f1": 0.6539767769316199
+        },
+        {
+          "fold": "test on 0.007 in at 1 HP",
+          "test_windows": 470,
+          "accuracy": 0.7489361702127659,
+          "macro_f1": 0.7211639596550083
+        },
+        {
+          "fold": "test on 0.007 in at 2 HP",
+          "test_windows": 469,
+          "accuracy": 0.6460554371002132,
+          "macro_f1": 0.6320921985815603
+        },
+        {
+          "fold": "test on 0.007 in at 3 HP",
+          "test_windows": 471,
+          "accuracy": 0.6581740976645435,
+          "macro_f1": 0.6434911831122296
+        },
+        {
+          "fold": "test on 0.014 in at 0 HP",
+          "test_windows": 409,
+          "accuracy": 0.3471882640586797,
+          "macro_f1": 0.27128748958622606
+        },
+        {
+          "fold": "test on 0.014 in at 1 HP",
+          "test_windows": 470,
+          "accuracy": 0.5617021276595745,
+          "macro_f1": 0.5016823211403457
+        },
+        {
+          "fold": "test on 0.014 in at 2 HP",
+          "test_windows": 469,
+          "accuracy": 0.6226012793176973,
+          "macro_f1": 0.553324707470747
+        },
+        {
+          "fold": "test on 0.014 in at 3 HP",
+          "test_windows": 470,
+          "accuracy": 0.4702127659574468,
+          "macro_f1": 0.3385089397752404
+        },
+        {
+          "fold": "test on 0.021 in at 0 HP",
+          "test_windows": 412,
+          "accuracy": 0.44660194174757284,
+          "macro_f1": 0.5222358221134231
+        },
+        {
+          "fold": "test on 0.021 in at 1 HP",
+          "test_windows": 469,
+          "accuracy": 0.47547974413646055,
+          "macro_f1": 0.4626672401409745
+        },
+        {
+          "fold": "test on 0.021 in at 2 HP",
+          "test_windows": 470,
+          "accuracy": 0.41702127659574467,
+          "macro_f1": 0.3760425651198896
+        },
+        {
+          "fold": "test on 0.021 in at 3 HP",
+          "test_windows": 471,
+          "accuracy": 0.16560509554140126,
+          "macro_f1": 0.12771680532068233
+        }
+      ],
+      "confusion_matrix": [
+        [
+          1038,
+          45,
+          86,
+          58
+        ],
+        [
+          0,
+          408,
+          715,
+          287
+        ],
+        [
+          194,
+          549,
+          394,
+          276
+        ],
+        [
+          294,
+          62,
+          65,
+          990
+        ]
+      ]
+    },
+    "Logistic regression, FFT spectrum": {
+      "pooled_accuracy": 0.5759018494781175,
+      "pooled_macro_f1": 0.5244877301735833,
+      "mean_fold_accuracy": 0.5749192982833371,
+      "min_fold_accuracy": 0.4199029126213592,
+      "mean_fold_macro_f1": 0.5144193272361645,
+      "min_fold_macro_f1": 0.4075151428092605,
+      "folds": [
+        {
+          "fold": "test on 0.007 in at 0 HP",
+          "test_windows": 411,
+          "accuracy": 0.6545012165450121,
+          "macro_f1": 0.6417682926829268
+        },
+        {
+          "fold": "test on 0.007 in at 1 HP",
+          "test_windows": 470,
+          "accuracy": 0.723404255319149,
+          "macro_f1": 0.6549707602339181
+        },
+        {
+          "fold": "test on 0.007 in at 2 HP",
+          "test_windows": 469,
+          "accuracy": 0.7356076759061834,
+          "macro_f1": 0.6604046242774566
+        },
+        {
+          "fold": "test on 0.007 in at 3 HP",
+          "test_windows": 471,
+          "accuracy": 0.6687898089171974,
+          "macro_f1": 0.6273584905660378
+        },
+        {
+          "fold": "test on 0.014 in at 0 HP",
+          "test_windows": 409,
+          "accuracy": 0.5574572127139364,
+          "macro_f1": 0.5054438209407741
+        },
+        {
+          "fold": "test on 0.014 in at 1 HP",
+          "test_windows": 470,
+          "accuracy": 0.5,
+          "macro_f1": 0.4147887323943662
+        },
+        {
+          "fold": "test on 0.014 in at 2 HP",
+          "test_windows": 469,
+          "accuracy": 0.509594882729211,
+          "macro_f1": 0.4251193109067629
+        },
+        {
+          "fold": "test on 0.014 in at 3 HP",
+          "test_windows": 470,
+          "accuracy": 0.6404255319148936,
+          "macro_f1": 0.5890098000893456
+        },
+        {
+          "fold": "test on 0.021 in at 0 HP",
+          "test_windows": 412,
+          "accuracy": 0.4199029126213592,
+          "macro_f1": 0.4075151428092605
+        },
+        {
+          "fold": "test on 0.021 in at 1 HP",
+          "test_windows": 469,
+          "accuracy": 0.4925373134328358,
+          "macro_f1": 0.41379310344827586
+        },
+        {
+          "fold": "test on 0.021 in at 2 HP",
+          "test_windows": 470,
+          "accuracy": 0.4978723404255319,
+          "macro_f1": 0.4161931818181818
+        },
+        {
+          "fold": "test on 0.021 in at 3 HP",
+          "test_windows": 471,
+          "accuracy": 0.4989384288747346,
+          "macro_f1": 0.41666666666666663
+        }
+      ],
+      "confusion_matrix": [
+        [
+          1227,
+          0,
+          0,
+          0
+        ],
+        [
+          67,
+          126,
+          734,
+          483
+        ],
+        [
+          470,
+          552,
+          391,
+          0
+        ],
+        [
+          4,
+          2,
+          4,
+          1401
+        ]
+      ]
+    },
+    "Neural network (PyTorch MLP), FFT spectrum": {
+      "pooled_accuracy": 0.5669291338582677,
+      "pooled_macro_f1": 0.5213412610913848,
+      "mean_fold_accuracy": 0.5655348062857534,
+      "min_fold_accuracy": 0.4199029126213592,
+      "mean_fold_macro_f1": 0.5142862970444934,
+      "min_fold_macro_f1": 0.4095803756820706,
+      "folds": [
+        {
+          "fold": "test on 0.007 in at 0 HP",
+          "test_windows": 411,
+          "accuracy": 0.48175182481751827,
+          "macro_f1": 0.5428015564202335
+        },
+        {
+          "fold": "test on 0.007 in at 1 HP",
+          "test_windows": 470,
+          "accuracy": 0.7446808510638298,
+          "macro_f1": 0.6647727272727273
+        },
+        {
+          "fold": "test on 0.007 in at 2 HP",
+          "test_windows": 469,
+          "accuracy": 0.7484008528784648,
+          "macro_f1": 0.6661931818181819
+        },
+        {
+          "fold": "test on 0.007 in at 3 HP",
+          "test_windows": 471,
+          "accuracy": 0.554140127388535,
+          "macro_f1": 0.5511363636363636
+        },
+        {
+          "fold": "test on 0.014 in at 0 HP",
+          "test_windows": 409,
+          "accuracy": 0.6577017114914425,
+          "macro_f1": 0.5953359887814391
+        },
+        {
+          "fold": "test on 0.014 in at 1 HP",
+          "test_windows": 470,
+          "accuracy": 0.5,
+          "macro_f1": 0.4157223796033994
+        },
+        {
+          "fold": "test on 0.014 in at 2 HP",
+          "test_windows": 469,
+          "accuracy": 0.535181236673774,
+          "macro_f1": 0.4747162022703818
+        },
+        {
+          "fold": "test on 0.014 in at 3 HP",
+          "test_windows": 470,
+          "accuracy": 0.6595744680851063,
+          "macro_f1": 0.6078677898057068
+        },
+        {
+          "fold": "test on 0.021 in at 0 HP",
+          "test_windows": 412,
+          "accuracy": 0.4199029126213592,
+          "macro_f1": 0.4095803756820706
+        },
+        {
+          "fold": "test on 0.021 in at 1 HP",
+          "test_windows": 469,
+          "accuracy": 0.488272921108742,
+          "macro_f1": 0.411849710982659
+        },
+        {
+          "fold": "test on 0.021 in at 2 HP",
+          "test_windows": 470,
+          "accuracy": 0.4978723404255319,
+          "macro_f1": 0.4161931818181818
+        },
+        {
+          "fold": "test on 0.021 in at 3 HP",
+          "test_windows": 471,
+          "accuracy": 0.4989384288747346,
+          "macro_f1": 0.415266106442577
+        }
+      ],
+      "confusion_matrix": [
+        [
+          1227,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          187,
+          745,
+          475
+        ],
+        [
+          470,
+          658,
+          282,
+          3
+        ],
+        [
+          2,
+          3,
+          6,
+          1400
+        ]
+      ]
+    }
+  }
+}
